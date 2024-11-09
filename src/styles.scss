@@ -1,0 +1,136 @@
+@import 'bootstrap/scss/bootstrap';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&display=swap');
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+p{
+  margin: 0;
+}
+body {
+  font-family: "Merienda", cursive;
+}
+
+input {
+  outline: 0;
+}
+
+.transition {
+  transition: 0.5s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+.mainBgColor {
+  background-color: #3a9ac0;
+  // 03275a
+  &:hover{
+    color: #000 !important;
+  }
+}
+
+.mainTextColor {
+  color: #3a9ac0;
+}
+
+.secBgColor {
+  background-color: #3a9ac0;
+}
+
+.secTextColor {
+  color: #3a9ac0;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(45deg, #3a9ac0 0%, #03275a 100%) !important;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #74ccff, #3a9ac0 25%, #3d1a68 70%, #03275a);
+  color: white;
+
+  &:hover {
+    background: linear-gradient(135deg, #03275a, #3d1a68 25%, #3a9ac0 70%, #74ccff);
+    color: white;
+  }
+}
+
+.text-hover {
+  &:hover {
+    color: #3a9ac0 !important;
+
+  }
+}
+.spinner-border{
+  color: #fff;
+  width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+.center-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.center-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-end{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.center-start{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.mainPadding{
+  @media (min-width : 1400px) {
+    padding: 0 200px;
+  }
+
+  @media (min-width : 1200px) and (max-width : 1400px) {
+    padding: 0 120px;
+  }
+
+  @media (min-width : 992px) and (max-width : 1200px) {
+    padding: 0 20px;
+  }
+}
+.h-30{
+  height: 30%;
+}
+.h-70{
+  height: 70%;
+}
+.imgCss{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  position: absolute;
+  width: 70px;
+  transition: transform 0.2s ease;
+}
+
+.banner1 {
+  top: 50%;
+  left: 80px;
+}
+
+.banner2 {
+  bottom: 100px;
+  right: 80px;
+}
+
+.banner3 {
+  top: 150px;
+  left: 50%;
+}
